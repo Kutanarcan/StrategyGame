@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6172a4eee1126954daf101af271facbd, type: 3}
+  m_Name: PoolInfoAsset
+  m_EditorClassIdentifier: 
+  poolInfos:
+  - name: Barracks
+    prefab: {fileID: 3280651083164385284, guid: 8e55738e54259ec4a81ea22add0771ab, type: 3}
+    size: 50
+  - name: PowerPlant
+    prefab: {fileID: 5992109514864107798, guid: 8f678410ce7b8f9419f98891ab1ed743, type: 3}
+    size: 50
+  - name: SoldierWithAI
+    prefab: {fileID: 8120014658427781701, guid: befa8bf0f3d48c347a74e915e8cefbd4, type: 3}
+    size: 100

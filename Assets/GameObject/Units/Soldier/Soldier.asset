@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ee4a7e34b94784caa55d48951e45e8, type: 3}
+  m_Name: Soldier
+  m_EditorClassIdentifier: 
+  unitName: Soldier
+  prefab: {fileID: 8120014658427781752, guid: befa8bf0f3d48c347a74e915e8cefbd4, type: 3}
+  icon: {fileID: 21300000, guid: c9818fc84fccbbc4a96bf3e1365f174d, type: 3}
+  damageAmount: 10
+  attackRange: 3
+  fireSpeed: 1
+  cursorData: {fileID: 11400000, guid: 1693cc8f7a299294fab1d654eb71f9e2, type: 2}
