@@ -47,7 +47,8 @@ public class Base_Unit : MonoBehaviour, ISelectItem
 
     void OnDisable()
     {
-        DeSelect();
+        if (isSelected)
+            DeSelect();
     }
 
     void Update()

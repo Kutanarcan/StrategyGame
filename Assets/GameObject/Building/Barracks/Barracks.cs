@@ -7,8 +7,6 @@ public class Barracks : Building, ICanProduce
     [SerializeField]
     Transform spawnPoint;
 
-    bool isSelected;
-
     protected override void Awake()
     {
         base.Awake();

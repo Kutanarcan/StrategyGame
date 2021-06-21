@@ -9,9 +9,11 @@ public abstract class Building : MonoBehaviour, ISelectItem
     [SerializeField]
     GameObject healthBar;
 
-    BuildingTypeHolder buildingTypeHolder;
-
     public BuildingTypeHolder BuildingTypeHolder => buildingTypeHolder;
+
+    protected bool isSelected;
+
+    BuildingTypeHolder buildingTypeHolder;
 
     protected virtual void Awake()
     {
@@ -21,7 +23,8 @@ public abstract class Building : MonoBehaviour, ISelectItem
 
     void OnDisable()
     {
-        DeSelect();
+        if (isSelected)
+            DeSelect();
     }
 
     public virtual void Select()
@@ -29,6 +32,7 @@ public abstract class Building : MonoBehaviour, ISelectItem
         CursorManager.Instance.SetActiveCursorData(buildingTypeHolder.BuildingData.CursorData);
         healthBar.SetActive(true);
         OnBuildingSelectionChanged?.Invoke(this);
+        isSelected = true;
     }
 
     public virtual void DeSelect()
@@ -36,5 +40,6 @@ public abstract class Building : MonoBehaviour, ISelectItem
         CursorManager.Instance.ResetActiveCursorData();
         healthBar.SetActive(false);
         OnBuildingSelectionChanged?.Invoke(null);
+        isSelected = false;
     }
 }
